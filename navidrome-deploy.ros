@@ -1,0 +1,16 @@
+#!/bin/sh
+#|-*- mode:lisp -*-|#
+#|
+exec ros -Q -- $0 "$@"
+|#
+(progn
+  (ros:ensure-asdf)
+  #+quicklisp (ql:quickload '(:navidrome/deploy) :silent t))
+
+(defpackage :ros.script.navidrome-deploy
+  (:use :cl))
+(in-package :ros.script.navidrome-deploy)
+
+(defun main (&rest argv)
+  (uiop:quit (navidrome/deploy:main argv)))
+;;; vim: set ft=lisp lisp:
