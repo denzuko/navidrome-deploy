@@ -29,7 +29,7 @@
 (defparameter *pool* "tank"
   "ZFS pool holding the navidrome/data dataset.")
 
-(defparameter *fqdn* "music.example.org"
+(defparameter *fqdn* "on.dapla.net"
   "Host name HAProxy routes to the Navidrome backend.")
 
 (defparameter *music-path* "/tank/media/music"

@@ -72,8 +72,8 @@ ros init
 ros install qlot
 qlot add consfigurator
 make build
-./navidrome-deploy --render --fqdn music.example.org --music /tank/media/music
-sudo ./navidrome-deploy --fqdn music.example.org --music /tank/media/music
+./navidrome-deploy --render --fqdn on.dapla.net --music /tank/media/music
+sudo ./navidrome-deploy --fqdn on.dapla.net --music /tank/media/music
 ```
 
 `--render` prints the quadlet, HAProxy backend, and map line without touching
